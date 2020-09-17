@@ -42,6 +42,7 @@
     /*https://visme.co/blog/website-color-schemes/   21         */
     /*https://coolors.co/5680e9-84ceeb-ffd2fc-5ab9ea-c1c8e4-8860d0*/
     --blue-crayola-rgb: 86, 128, 233;
+    --dark-blue-crayola-rgb: 41, 60, 109;
     --sky-blue-rgb: 132, 206, 235;
     --cyan-process-rgb: 90, 185, 234;
     --periwinkle-crayola-rgb: 193, 200, 228;
@@ -49,6 +50,7 @@
     --pink-lace-rgb: 255, 210, 252;
 
     --blue-crayola: rgb(var(--blue-crayola-rgb));
+    --dark-blue-crayola: rgb(var(--dark-blue-crayola-rgb));
     --sky-blue: rgb(var(--sky-blue-rgb));
     --cyan-process: rgb(var(--cyan-process-rgb));
     --periwinkle-crayola: rgb(var(--periwinkle-crayola-rgb));
@@ -238,6 +240,10 @@
 #navBar a:hover{
     color: rgba(var(--pink-lace-rgb), 1);
 }
+#navBar a:active{
+    /*color: #626262;*/
+    color: var(--dark-blue-crayola);
+}
 
 #navBar p{
     padding: 20px;
@@ -245,7 +251,7 @@
 
     text-align: center;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 #navBar a:first-of-type p{
     padding-top: 25px;
